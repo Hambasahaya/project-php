@@ -1,0 +1,780 @@
+/* ini buat fontnya */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* ini biar margin sama paddingya 0 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ini buat ngatur layoutnya */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* ini buat ngatur layoutnya */
+.main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+/* ini kotak yang ada searchnya sama haloo */
+.top-nav{
+    display: flex;
+    background-color:#2b3467;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    width:99%;
+    height: 20%;
+    margin:10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+/* ini kotak serchnya */
+.top-nav .title{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 149, 255);
+    box-shadow: 4px 4px 4px black;
+    border-radius: 50px;
+    margin: 5px;
+    border: 2px solid skyblue;
+    box-sizing: border-box;
+}
+
+/* ini kotak yang tulisan halo */
+.top-nav .user{
+    display: flex;
+    flex: 1;
+    height: max-content;
+    justify-content: flex-end;
+    align-items: center;
+    margin:5px auto;
+    box-sizing: border-box;
+}
+
+.top-nav .user .menu-user{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+/* ini buat nagtur yang tulisan haloo */
+.top-nav .user .menu-user ul{
+    list-style: none;
+    font-size: 19px;
+    font-weight: 900;
+}
+/* ini yang kotak dasbord */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color:#E6DDC4 ;
+    width: 250px;
+    height: 80vh;
+    border:2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #BBD2EC;
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* ini yang tulisan Dasbord Admin */
+.sidebar .header-sidebar{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 8px 10px rgb(161, 161, 255);
+    transform: scale(1);
+    transition: 0.5s;
+    border: 1px solid white;
+}
+/* ini buat nagtur tulisan menunya */
+.header-sidebar h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ini kotak menunya */
+.sidebar .menu{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+/* ini icon */
+.sidebar span{
+    padding-right: 4px;
+    box-sizing: border-box;
+}
+/* ini kotak tulisan menu */
+.menuu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(141, 181, 255);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+/* itu tulisan menu */
+.menuu h4{
+    color:white;
+    text-shadow:2px 2px blue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* ini kotak,yang isinya daftar prodk dll */
+.sidebar .menu{
+    display: flex;
+    height: 100%;
+    margin-top: -5px;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+
+}
+/* ini yang tulisan Dafttar Karyawan dll */
+.sidebar .menu li {
+    display: flex;
+    border: 1px solid white;
+    margin: 30px auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px #ffc2d1;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+font-weight: 900;
+}
+
+/* kotak */
+.kotak-laporan{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 115, 255);
+    border-radius: 6px;
+    background-color: #2b3467 ;
+}
+.kotak-laporan h4{
+    color: white;
+}
+.kotak-laporan p{
+    color: white;
+}
+.kotak-laporan .kotak-uang{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #EB455F;
+    background: color #FCFFE7;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(168, 224, 249);
+}
+.kotak-laporan .kotak-stok{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #EB455F;
+    background: color #FCFFE7;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 175, 255);
+}
+.kotak-laporan .kotak-pesanan{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #EB455F;
+    background: color #FCFFE7;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 222, 255);
+}
+
+/* modal */
+/* Tampilan modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-box {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    box-sizing: border-box;
+  }
+  .modal-box  .judul-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+  }
+.modal-conten{
+    display: flex;
+overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+}
+
+#batal{
+    width: 20%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(251, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    transition: 0.2s all ease;
+}
+#batal:hover{
+    opacity: 90%;
+    box-shadow: 1px 1px 1px black;
+}
+.kasir{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.kasir .atas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.btnk{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.kasir .tabel-kasir{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    box-shadow: 4px 8px 4px gray;
+}
+.tabel-kasir table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #8EA7E9;
+
+}
+.tabel-kasir img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabel-kasir tr:nth-child(even){
+    background-color: #7286D3;
+}
+.tabel-kasir th ,td{
+    border: 2px solid #144272;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.form-m{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-m .label{
+    display: flex;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.form-m .input{
+    display: flex;
+    margin: 3px;
+    width: 100%;
+}
+.form-m input[type=text],input[type=number],select,input[type=password],input[type=file],input[type="email"]{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #144272;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #337ab7 !important;
+}
+.form-m button{
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #9FB4FF;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.2s all ease;   
+}
+.btn-close{
+    display: flex;
+}
+.btn-group {
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 0;
+    background-color: #2b87dd;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+.btn:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.btn:nth-child(even){
+    background-color:#19376D;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+/* form update */
+.form{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: baseline;
+    background-color:#93BFCF;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form .header-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.form .input input[type=text],input[type=file],input[type=number]{
+    width:100vh;
+    padding: 8px 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px;
+    
+}
+.form .btn-sumbit{
+    display: flex;
+    justify-content: center;
+}
+.form .btn-sumbit button{
+    width: 100vh;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #7F669D;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.table-str{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 5px;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.table-str .header-str{
+    margin: 5px;
+    border-top: 2px dotted black;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dotted black;
+    align-items: center;
+}
+
+.table-str .table-beli{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.table-str .table-beli .str{
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: 1px solid black;
+}
+.str tr,td,th{
+text-align: left;
+padding: 8px;
+border: 1px solid black;
+}
+.table-str .total{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+.cetak-str{
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+.cetak-str button{
+    padding: 5px;
+    width: 60px;
+    height: 40px;
+    background-color: #7286D3;
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.cetak-str a{
+    padding: 5px;
+    width: 70px;
+    height: 40px;
+    background-color: #7286D3;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.atas .header-tabel{
+    display: none;
+}
+/* login page */
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#6096B4;
+    border-radius:2px;
+    width: 100%;
+    height: 100vh;
+}
+.form-login{
+width: 50%;
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #93BFCF;
+border-radius: 8px;
+border: 4px solid #2b3467;
+box-shadow: 1px -4px 29px 26px rgba(254,254,254,0.68);
+-webkit-box-shadow: 1px -4px 29px 26px rgba(254,254,254,0.68);
+-moz-box-shadow: 1px -4px 29px 26px rgba(254,254,254,0.68);
+}
+.form-login .header-login-page{
+    display: flex;
+    justify-content: center;
+}
+.input-l{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.input-l input[type=text], .input-l input[type="password"]{
+    width: 350px;
+    padding: 5px 18px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.input-c{
+    display: flex;
+    box-sizing: border-box;
+}
+.input-c input[type="checkbox"]{
+    margin-left: 10px;
+}
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-login button{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #002B5B;
+    color: white;
+}
+/* page */
+
+
+/* users page */
+.user11{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #DFE2FE;
+}
+.user-profile-page{
+    display: flex;
+    flex-direction: column;
+    background-color: #B1CBFA;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 4px;
+    width: 50%;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.user-profile-page img{
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+}
+.menu-user-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    width: 99%;
+    height: 20%;
+    padding: 8px;
+    border:  4px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #8E98F5;
+    overflow: hidden;
+    cursor: pointer;
+}
+.menu-user-page li{
+    list-style: none;
+    background-color:#243763;
+    width:95%;
+    padding: 6px;
+    margin: 6px;
+    border: 3px solid white;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.menu-user-page a{
+    color: white;
+}
+.menu-user-page span{
+    color: white;
+    padding: 4px;
+}
+/* end user page */
+.alert-flash{
+    display: flex;
+    justify-content: center;
+}
+.pesan-alert{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #243763;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.pesan-alert h4{
+    color: white;
+    font-size: 12px;
+}
+.btn-close-flash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-close-flash button{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+@media print{
+    .atas .btn-grup{
+            display:none;
+            visibility: hidden;
+        }
+        .atas .header-tabel{
+            display: flex;
+        }
+        .atas .header-tabel h4{
+            margin: 1px;
+            text-align: center;
+        }
+        
+.tabel-kasir a{
+    display: none;
+    visibility: hidden;
+}
+.tabel-kasir form{
+    display: none;
+    visibility: hidden;
+}
+td:last-child{
+    display: none;
+    visibility: hidden;
+}
+.cetak-str{
+    display: none;
+    visibility: hidden;
+}
+.table-str{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 5px;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.table-str .header-str{
+    margin: 5px;
+    border-top: 2px dotted black;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dotted black;
+    align-items: center;
+}
+
+.table-str .table-beli{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.table-str .table-beli .str{
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: 1px solid black;
+}
+.str tr,td,th{
+text-align: left;
+padding: 8px;
+border: 1px solid black;
+}
+.table-str .total{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+
+}

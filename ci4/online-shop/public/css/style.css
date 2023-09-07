@@ -1,0 +1,311 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    overflow-x:hidden !important ;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1.5px;
+}
+/* nav */
+.navbar{
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 4px auto;
+}
+.brand-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.brand-nav img{
+    width: 15%;
+    height: 10vh;
+}
+.brand-nav h6{
+    align-self: center;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.btn-nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+.btn-nav button{
+border: none;
+background-color: white;
+}
+.btn-nav .bi-search,.bi-person-circle,.bi-cart{
+    font-size: 1.2em;
+    color: black;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* end nav */
+.jumbotron{
+    display: flex;
+    padding: 2px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 16px 3px rgba(206,230,243,0.77);
+-webkit-box-shadow: 4px 4px 16px 3px rgba(206,230,243,0.77);
+-moz-box-shadow: 4px 4px 16px 3px rgba(206,230,243,0.77);
+}
+.carousel-item img{
+    object-fit:cover;
+    width: 1500px;
+    height:600px;
+}
+.section-home{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 4px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+.section-home .header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px auto;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.produk-new{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    box-sizing: border-box;
+}
+/* card produk */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 6px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    
+}
+.card > .card-header{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px 4px white;
+    border-bottom: 4px solid black;
+}
+.card-header img{
+    width: 100%;
+border-radius: 12px;
+}
+.card > .card-content{
+    display: flex;
+flex-direction: column;
+padding: 4px;
+overflow: hidden;
+box-sizing: border-box;
+}
+.card-action{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.card-action button{
+    width: 25%;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.add-card > .bi-minecart{
+    font-size: 1.2rem;
+    color: #F94C10;
+}
+.add-whislist > .bi-bag-heart-fill{
+    font-size: 1.2rem;
+    color: #C70039;
+}
+/* search */
+.search-form{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    justify-content:center;
+    padding: 8px;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin: 8px auto;
+    
+}
+.search-form input[type="text"]{
+    width: 100vh;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.formlr{
+    background-color: white;
+    display: flex;
+    padding: 8px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form-login{
+    display: flex;
+    background-color:transparent;
+    width: 50%;
+    align-items: center;
+    background-color: #F94C10;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.form-control{
+    width: 720px;
+}
+.form-register{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+/* navbar */
+.navbar{
+    width:fit-content;
+}
+.responsive-nav{
+    flex-direction: column;
+    position: absolute;
+    padding: 4px;
+    background-color:transparent;
+    opacity: 1px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    top:45px;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 4px ;
+    z-index: 1;
+    margin: 8px auto;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    display: none;
+}
+.nav-toggle{
+    display: flex;
+    justify-content: flex-start;
+padding: 4px;
+
+box-sizing: border-box;
+flex: 0.8;
+}
+.nav-toggle button{
+    width: 40%;
+    background-color: white;
+    border: none;
+}
+.brand-nav h6{
+    font-size: 12px;
+    padding-left: 2px;
+    justify-content: flex-start;
+}
+.brand-nav{
+
+    flex: 2;
+}
+.brand-nav img{
+    width: 25%;
+    height: fit-content;
+}
+.btn-nav .bi-search,.bi-person-circle,.bi-cart{
+    font-size: 1.1em;
+}
+.btn-nav{
+    align-items: flex-end;
+}
+/* end navbar */
+    .carousel-item img{
+        object-fit:contain;
+        width: 100%;
+        height: fit-content;
+    }
+    .section-home{
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+.card{
+    width: 49%;
+    height: 60vh;
+    gap:8% ;
+    box-shadow: 4px 4px 4px 4px whitesmoke;
+    margin-bottom: 40px;
+}
+.card-action{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.card-content{
+    margin-top: -35px;
+}
+.card-content h5,h6{
+    font-size: 14px;
+}
+
+.produk-new{
+    flex-direction: row;
+align-items: flex-start;
+    
+}
+
+
+.header-section{
+    max-width: 100%;
+    height: auto;
+}
+.search-form input[type="text"]{
+    width: 50vh;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+}

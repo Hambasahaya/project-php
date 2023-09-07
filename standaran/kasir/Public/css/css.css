@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+/* ini yang ada searchnya */
+.top-nav{
+    display: flex;
+    background-color:#2B3467 !important ;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    width:99%;
+    height: 20%;
+    margin:10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+/* ini serchnya */
+.top-nav .search-bar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 149, 255);
+    box-shadow: 4px 4px 4px black;
+    border-radius: 50px;
+    margin: 5px;
+    border: 2px solid skyblue;
+    box-sizing: border-box;
+}
+.top-nav .search-bar input[type="text"]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    width: 90%;
+    background: white;
+    border-radius: 30px;
+}
+/* ini yang haloo */
+.top-nav .user{
+    display: flex;
+    flex: 1;
+    height: max-content;
+    justify-content: flex-end;
+    align-items: center;
+    margin:5px auto;
+    box-sizing: border-box;
+}
+.top-nav .user .menu-user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color:#FCFFE7 !important;
+}
+.top-nav .user .menu-user ul{
+    list-style: none;
+    font-size: 19px;
+    font-weight: 900;
+}
+/* ini yang dasbord */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color:#E6DDC4 ;
+    width: 250px;
+    height: 80vh;
+    border:2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #BBD2EC;
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* ini yang tulisan Dasbord Admin */
+.sidebar .header-sidebar{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 8px 10px rgb(161, 161, 255);
+    transform: scale(1);
+    transition: 0.5s;
+    border: 1px solid white;
+}
+/* ini buat nagtur tulisan menunya */
+.header-sidebar h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ini kotak menunya */
+.sidebar .menu{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+/* ini icon */
+.sidebar span{
+    padding-right: 4px;
+    box-sizing: border-box;
+}
+.menuu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(141, 181, 255);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.menuu h4{
+    color:white;
+    text-shadow:2px 2px blue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sidebar .menu{
+    display: flex;
+    height: 100%;
+    margin-top: -5px;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+
+}
+.sidebar .menu li {
+    display: flex;
+    border: 1px solid white;
+    margin: 30px auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px #ffc2d1;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+font-weight: 900;
+}
+
+/* kotak */
+.kotak-laporan{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 115, 255);
+    border-radius: 6px;
+    background-color: #2B3467 !important;
+}
+.kotak-laporan .kotak-uang{
+    display: flex;
+
+    flex-direction: column;
+    border-left: 3px solid #EB455F !important;
+    background-color:#FCFFE7 !important;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(168, 224, 249);
+}
+.kotak-laporan .kotak-stok{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #EB455F !important;
+    background-color:#FCFFE7 !important;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 175, 255);
+}
+.kotak-laporan .kotak-pesanan{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #EB455F !important;
+    background-color:#FCFFE7 !important;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 222, 255);
+}
+
+/* table */
+.tabel{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+
+}
+.tabel table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+.tabel table th,td{
+    border: 2px solid rgb(65, 159, 166);
+}
+  .tabel table th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+th:nth-child(even){
+    background-color: rgb(23, 163, 214);
+}
+.tabel .btn-add{
+    background-color: skyblue;
+    width: max-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 40px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.tabel .btn-add:hover{
+    transform: scale(1.1);
+    border: 2px solid red;
+}
+/* form */
+/* .container{
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    margin: 5px;
+    align-content: center;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+} */
+.header{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(35, 169, 221);
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px black;
+}
+.header h4{
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    border: 3px solid yellow;
+    box-shadow: 4px 4px 4px white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+/* ini buat fontnya */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* ini biar margin sama paddingya 0 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ini buat ngatur layoutnya */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* ini buat ngatur layoutnya */
+.main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+/* ini kotak yang ada searchnya sama haloo */
+.top-nav{
+    display: flex;
+    background-color:#678983 ;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    width:99%;
+    height: 20%;
+    margin:10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+/* ini kotak serchnya */
+.top-nav .search-bar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 149, 255);
+    box-shadow: 4px 4px 4px black;
+    border-radius: 50px;
+    margin: 5px;
+    border: 2px solid skyblue;
+    box-sizing: border-box;
+}
+/* ini searchnya */
+.top-nav .search-bar input[type="text"]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    width: 90%;
+    background: white;
+    border-radius: 30px;
+}
+/* ini kotak yang tulisan halo */
+.top-nav .user{
+    display: flex;
+    flex: 1;
+    height: max-content;
+    justify-content: flex-end;
+    align-items: center;
+    margin:5px auto;
+    box-sizing: border-box;
+}
+
+.top-nav .user .menu-user{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+/* ini buat nagtur yang tulisan haloo */
+.top-nav .user .menu-user ul{
+    list-style: none;
+    font-size: 19px;
+    font-weight: 900;
+}
+/* ini yang kotak dasbord */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color:#E6DDC4 ;
+    width: 250px;
+    height: 80vh;
+    border:2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #BBD2EC;
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* ini yang tulisan Dasbord Admin */
+.sidebar .header-sidebar{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 8px 10px rgb(161, 161, 255);
+    transform: scale(1);
+    transition: 0.5s;
+    border: 1px solid white;
+}
+/* ini buat nagtur tulisan menunya */
+.header-sidebar h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ini kotak menunya */
+.sidebar .menu{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+/* ini icon */
+.sidebar span{
+    padding-right: 4px;
+    box-sizing: border-box;
+}
+/* ini kotak tulisan menu */
+.menuu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(141, 181, 255);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+/* itu tulisan menu */
+.menuu h4{
+    color:white;
+    text-shadow:2px 2px blue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* ini kotak,yang isinya daftar prodk dll */
+.sidebar .menu{
+    display: flex;
+    height: 100%;
+    margin-top: -5px;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+
+}
+/* ini yang tulisan Dafttar Karyawan dll */
+.sidebar .menu li {
+    display: flex;
+    border: 1px solid white;
+    margin: 30px auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px #ffc2d1;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+font-weight: 900;
+}
+
+/* kotak */
+.kotak-laporan{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 115, 255);
+    border-radius: 6px;
+    background-color: #678983 ;
+}
+.kotak-laporan .kotak-uang{
+    display: flex;
+
+    flex-direction: column;
+    border-left: 3px solid rgb(2, 255, 2);
+    background-color:#ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(168, 224, 249);
+}
+.kotak-laporan .kotak-stok{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid rgb(2, 103, 255);
+    background-color:#ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 175, 255);
+}
+.kotak-laporan .kotak-pesanan{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid rgb(255, 2, 204);
+    background-color:#ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgb(4, 222, 255);
+}
+
+/* modal */
+/* Tampilan modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-box {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 41px 0px rgba(0,0,0,0.75);
+    box-sizing: border-box;
+  }
+  .modal-box  .judul-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+  }
+.modal-conten{
+    display: flex;
+overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+}
+
+#batal{
+    width: 20%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(251, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    transition: 0.2s all ease;
+}
+#batal:hover{
+    opacity: 90%;
+    box-shadow: 1px 1px 1px black;
+}
+.kasir{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.kasir .atas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.btnk button{
+    width: 100%;
+    height: 35px;
+    background-color: #8EA7E9;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+ box-sizing: border-box;
+}
+.kasir .tabel-kasir{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    box-shadow: 4px 8px 4px gray;
+}
+.tabel-kasir table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #8EA7E9;
+}
+ th:nth-child(even){
+    background-color: #7286D3;
+}
+.tabel-kasir th ,td{
+    border: 2px solid #144272;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.form-m{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-m .label{
+    display: flex;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.form-m .input{
+    display: flex;
+    margin: 3px;
+    width: 100%;
+}
+.form-m input[type=text],input[type=number],select{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #144272;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #337ab7 !important;
+}
+.form-m button{
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #9FB4FF;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.2s all ease;   
+}
+.flash{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-direction: row;
+    background-color: #678983;
+    align-items: baseline;
+    border-radius: 5px;
+}
+.flash .flash-mesege{
+    flex: 1;
+    display: flex;
+    margin: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.flash-mesege h4{
+    font-size: 15px;
+}
+.close{
+    display: flex;
+    cursor: pointer;
+}
+.btn-group {
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #2b87dd;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  .btn:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .btn:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  .btn.active,
+  .btn:active {
+    background-color: #337ab7;
+    color: #fff;
+  }
+.btn:nth-child(even){
+    background-color: red;
+}
+
+/* form update */
+.form{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: baseline;
+    background-color:#93BFCF;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form .header-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.form .input input[type=text],input[type=file],input[type=number]{
+    width:100vh;
+    padding: 8px 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px;
+    
+}
+.form .btn-sumbit{
+    display: flex;
+    justify-content: center;
+}
+.form .btn-sumbit button{
+    width: 100vh;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #7F669D;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
