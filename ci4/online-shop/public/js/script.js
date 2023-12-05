@@ -1,30 +1,23 @@
-const navbar = document.querySelector('.navbar');  
-const navLink = navbar.querySelector('#nav-link'); 
-const NavBtn = navbar.querySelector('#toggle');
-const serachbar=document.querySelector('.search-form');
-let chekclik=0;
-const btnserch=document.getElementById('search');
-NavBtn.addEventListener('click', () => {
-chekclik++;
-    if (chekclik%2!=0) {
-        navbar.style.marginBottom="100px";
-    navLink.style.display = "flex";
-    navLink.classList.add("responsive-nav");
-    }else{
-        navLink.classList.remove('responsive-nav');
-        navLink.style.display="none";
-        navbar.style.marginBottom="0";
-        chekclik=0;
-    }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.send-data');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const productId = this.getAttribute('data-product-id');
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/add_cart', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 400) {
+                    console.log("Data berhasil dikirim");
+                } else {
+                    console.error("Gagal mengirim data: " + xhr.responseText);
+                }
+            };
+            const data = 'prd=' + encodeURIComponent(productId);
+            console.log(productId);
+            xhr.send(data);
+        });
+    });
+    
 });
-// btn serach
-btnserch.addEventListener('click',()=>{
-    chekclik++;
-    if (chekclik%2!=0) {
-        serachbar.style.display="flex";
-    }
-    else{
-        serachbar.style.display="none";
-    chekclik=0;
-    }
-})

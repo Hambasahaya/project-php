@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Controllers\Login\Login;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -14,6 +15,10 @@ class Filters extends BaseConfig
     /**
      * Configures aliases for Filter classes to
      * make reading things nicer and simpler.
+     *
+     * @var array<string, array<int, string>|string> [filter_name => classname]
+     *                                               or [filter_name => [classname1, classname2, ...]]
+     * @phpstan-var array<string, class-string|list<class-string>>
      */
     public array $aliases = [
         'csrf'          => CSRF::class,
@@ -21,17 +26,22 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        "login"         => Login::class,
     ];
 
     /**
      * List of filter aliases that are always
      * applied before and after every request.
+     *
+     * @var array<string, array<string, array<string, string>>>|array<string, array<string>>
+     * @phpstan-var array<string, list<string>>|array<string, array<string, array<string, string>>>
      */
     public array $globals = [
         'before' => [
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+
         ],
         'after' => [
             'toolbar',
