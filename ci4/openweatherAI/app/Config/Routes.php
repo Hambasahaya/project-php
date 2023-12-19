@@ -5,4 +5,5 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Apicuacaconfigure::index');
+$routes->get('/', 'Home::index');
+$routes->post('/getzonawaktu', 'Home::getZonaWaktu');
