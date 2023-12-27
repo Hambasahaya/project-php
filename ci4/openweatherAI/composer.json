@@ -12,6 +12,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "codeigniter4/framework": "^4.0",
+        "google/apiclient": "^2.15",
         "guzzlehttp/guzzle": "^7.8",
         "ipinfo/ipinfo": "^3.1"
     },

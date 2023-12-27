@@ -15,6 +15,27 @@
 </head>
 
 <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #D2E0FB;">
+        <div class="container">
+            <a class="navbar-brand" href="/">Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="/">Weather app</a>
+                    <?php if (!isset($_SESSION["id_user"])) : ?>
+                        <a class="nav-link" href="#">Login</a>
+                    <?php endif; ?>
+                    <?php if (isset($_SESSION["id_user"])) : ?>
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle"></i>Username</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
     <?= $this->renderSection('main') ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -34,22 +55,6 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-        });
-        var userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-        // Menampilkan zona waktu di konsol
-        console.log("Zona Waktu Pengguna: " + userTimeZone);
-
-        // Mengirim zona waktu ke server (Anda dapat menggunakan AJAX atau metode lain)
-        // Contoh menggunakan fetch untuk mengirim data ke server
-        fetch('/getzonawaktu', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                timeZone: userTimeZone
-            }),
         });
     </script>
 </body>

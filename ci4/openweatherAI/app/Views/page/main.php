@@ -17,7 +17,7 @@
         </div>
         <div class="content-suhu">
             <?php
-            date_default_timezone_set($zona_waktu);
+            date_default_timezone_set("asia/jakarta");
             $Time = date('Y-m-d');
             ?>
             <?php
