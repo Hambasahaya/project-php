@@ -31,14 +31,14 @@
         <li class="nav-item shadow-sm {{ Str::startsWith(request()->route()->getName(), 'sltm') ? 'active' : '' }}">
             <a class="nav-link active text-white" href="/sltm" style="background-color:#f75c41">
                 <i class="bx bx-money" id="icon"></i>
-                <span>Prediksi Harga SLTM</span>
+                <span>Prediksi Saham LSTM</span>
             </a>
         </li>
 
         <li class="nav-item shadow-sm {{ Str::startsWith(request()->route()->getName(), 'regresi') ? 'active' : '' }}">
             <a class="nav-link active text-white" href="/regresi" style="background-color:#f75c41">
                 <i class="bx bxs-bell" id="icon"></i>
-                <span>Prediksi Harga Regresi</span>
+                <span>Prediksi Saham Regresi Linier</span>
             </a>
         </li>
 

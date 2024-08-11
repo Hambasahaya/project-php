@@ -31,10 +31,7 @@
                                         Kelulusan Universitas Gunadarma Jurusan
                                         Informatika, Pada Website ini menyediakan 2 Prediksi Pemodelan Pertama
                                         Menggunakan
-                                        LSTM Dan kedua Menggunakan Regresi, dengan mengupload File CSV, Menginput tanggal
-                                        dan jumlah prediksi yang di inginkan atau dengan
-                                        memilih metode apa yang akan digunakan untuk memprediksi harga saham
-                                        meningkat dan menurun. </p>
+                                        LSTM Dan kedua Menggunakan Regresi Linier </p>
                                 </div>
                             </div>
                         </div>
