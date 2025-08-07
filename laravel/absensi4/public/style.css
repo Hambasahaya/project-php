@@ -1,0 +1,130 @@
+
+        body {
+           background: #F869D2 ;
+background: -webkit-linear-gradient(207deg, rgba(248, 105, 210, 1) 100%, rgba(235, 101, 116, 1) 75%);
+background: -moz-linear-gradient(207deg, rgba(248, 105, 210, 1) 100%, rgba(235, 101, 116, 1) 75%);
+background: linear-gradient(207deg, rgba(248, 105, 210, 1) 100%, rgba(235, 101, 116, 1) 75%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F869D2", endColorstr="#EB6574", GradientType=0);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    
+        .logo-banner img {
+            width: 100%;
+            top: 15px;
+            right: 15px;
+        }
+
+        .form-control {
+            background-color: #f7a6c2;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .btn-login {
+            background-color: #f7a6c2;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .forgot-password {
+            font-size: 0.9rem;
+            color: #3e2c3c;
+            text-decoration: underline;
+            display: block;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #2d0e2d;
+        }
+
+        p {
+            margin-bottom: 30px;
+            color: #2d0e2d;
+        }
+    .navbar {
+      background: transparent;
+      padding: 1.5rem 2rem;
+    }
+
+    .nav-link.active {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      color: black !important;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: black;
+      font-weight: 500;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .attendance-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .attendance-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .attendance-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .attendance-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+
+    .btn-scan {
+      background-color: #f7a6c2;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      width: 200px;
+      margin: 30px auto 10px;
+    }
+
+    .text-center a {
+      text-decoration: underline;
+      color: #000;
+      font-size: 0.95rem;
+      display: inline-block;
+      margin-top: 5px;
+    }

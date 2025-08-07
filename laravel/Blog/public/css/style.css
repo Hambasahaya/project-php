@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* overflow-x: hidden; */
+background-color: #F2E7D5;
+}
+a{
+     font-family: "Poppins", serif ;
+     text-decoration: none;
+}
+.navbar{
+    background-color: #F2E7D5;
+}
+.layout{
+    width: 100%;
+
+}
+.carousel-item img{
+    position: relative;
+    z-index: -2;
+    height: 80vh;
+}
+.carousel-inner{
+    width: 100%;
+
+}
+.carousel-item .board{
+    background-color: #393E46;
+    height: 10vh;
+    padding: 35px;
+}
+.carousel-caption{
+    width: 100%;
+    margin-left: -230px;
+    background-image: url('/img/bgcpation.png');
+    background-size: cover;
+    color: white;
+    font-family: "Bebas Neue", serif;
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+.layout .Latest .headersection{
+    background-image: url('/img/bgcpation.png');
+    background-position: center;
+    background-size: cover;
+    height: 5vh;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.layout .Latest .headersection2{
+    background-image: url('/img/bgcpation2.png');
+    background-position: center;
+    background-size: cover;
+    height: 7vh;
+    box-sizing: border-box;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.layout .Latest .headersection h5{
+    font-size: 2em;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.layout .Latest .headersection2 h5{
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+.articelpage{
+width: 100%;
+height:min-content;
+margin-bottom: 100px;
+}
+.articelpage .img-article{
+    margin: 50px auto;
+}
+.articelpage .article p{
+    padding: 10px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-family: "Poppins",serif;
+    font-size: 14px;
+}
+.articelHeader{
+    margin-top: 50px;
+}
+.articelHeader h4{
+    font-family: "Bebas Neue", serif;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.articelsubheading{
+    background-image: url('/img/bgcpation3.png');
+    padding: 10px;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.swiper-wrapper{
+ margin-bottom: 50px;
+}
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width:max-content;
+    height:max-content;
+   
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #393E46;
+}
+footer a{
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,1484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+/* Bagian Pencarian */
+.field {
+    background: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 20px 30px #ff69b4;
+}
+
+.logo {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.search-input,
+.input-lokasi {
+    display: flex;
+    align-items: center;
+    background-color: #d0d2d4;
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-input i {
+    color: #afb1b3;
+    margin-right: 8px;
+}
+
+.search-input input,
+.input-lokasi input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    height: 35px;
+    width: 100%;
+}
+
+.search-perusahaan {
+    display: flex;
+    align-items: center;
+    background-color: #d0d2d4;
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-perusahaan i {
+    color: #afb1b3;
+    margin-right: 8px;
+}
+
+.search-perusahaan input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    height: 35px;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* box regis dan masuk pada guest */
+.container-box-pendaftaran {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-pendaftaran {
+    background-color: #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tombol-pendaftaran {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tombol-pendaftaran a {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tombol-pendaftaran a:hover {
+    background-color: #303f9f;
+}
+
+.description p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Kategori */
+.container-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.popular-categories {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.category-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Daftar Perusahaan */
+.company-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carousel-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carousel-indicators.custom-indicators {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicators.custom-indicators button {
+    background-color: #888;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-indicators.custom-indicators .active {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-header h2 {
+    font-weight: bold;
+}
+
+.carousel-header p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background-color: #ff69b4;
+}
+
+/* CV dan Resume */
+.container-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cv-tutorial {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.cv-tutorial h2 {
+    margin-bottom: 30px;
+}
+
+.video-description {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+}
+
+.container-box {
+    background-color: #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* cari lowongan */
+.rekomendasi {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.rekomendasi h2 {
+    margin-bottom: 20px;
+}
+
+.rekomendasi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rekomendasi-item {
+    display: flex;
+    background-color: #ff65c3; /* Warna latar belakang */
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.rekomendasi-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white; /* Warna lingkaran gambar */
+    margin-right: 15px;
+}
+
+.rekomendasi-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rekomendasi-content {
+    flex: 1;
+}
+
+.rekomendasi-button {
+    background-color: #5272fe; /* Warna tombol */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Kategori Perusahaan */
+.Perusahaan-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.Perusahaan-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    height: 250px;
+    width: 100%;
+}
+
+/* Tentang Kami */
+.container-box-tentangkami {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.box-tentangkami {
+    background-color: rgba(255, 105, 180, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-desc,
+.box {
+    background-color: rgba(153, 153, 153, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+    height: 300px;
+    box-shadow: 0 20px 30px #838282;
+}
+
+.visi-misi {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    height: 300px;
+}
+
+.box h3 {
+    text-align: left;
+}
+
+/* css punya pelamar niehhhh */
+/* ---Job Detail--- */
+.JobDetailContainer {
+    max-width: 1200px; /* Lebar maksimal kontainer */
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.job-detail-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih halus */
+    overflow: hidden; /* Untuk menjaga border-radius pada elemen anak */
+}
+
+/* === Job Header Banner === */
+.job-header-banner {
+    background: linear-gradient(
+        135deg,
+        #6f42c1,
+        #4e9bff
+    ); /* Gradient baru, lebih profesional */
+    /* Alternatif: linear-gradient(135deg, #ff4fac, #ff8bb3); (jika tetap ingin nuansa pink) */
+    color: white;
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.job-header-banner h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.job-header-banner .company-name-short {
+    font-size: 1.25em;
+    margin-bottom: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.job-meta-info {
+    display: flex;
+    flex-wrap: wrap; /* Agar bisa turun baris di layar kecil */
+    gap: 12px 25px; /* Jarak antar item meta */
+    font-size: 0.95em;
+}
+
+.job-meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara ikon dan teks */
+}
+
+.job-meta-info i {
+    /* Styling untuk ikon Font Awesome */
+    font-size: 1.1em;
+    opacity: 0.85;
+}
+
+/* === Job Content Layout === */
+.job-content-wrapper {
+    display: flex;
+    flex-direction: row; /* Default untuk layar lebar */
+    padding: 30px;
+    gap: 35px; /* Jarak antara konten utama dan sidebar */
+}
+
+.job-main-content {
+    flex: 2.5; /* Konten utama mengambil lebih banyak ruang */
+    min-width: 0; /* Untuk mencegah overflow teks */
+}
+
+.job-sidebar {
+    flex: 1; /* Sidebar mengambil lebih sedikit ruang */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* === Job Sections === */
+.JobDetailContainer {
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.job-detail-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    overflow: hidden; 
+}
+
+/* === Job Header Banner === */
+.job-header-banner {
+    background: linear-gradient(135deg, #6f42c1, #4e9bff); 
+    color: white;
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.job-header-banner h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.job-header-banner .company-name-short {
+    font-size: 1.25em;
+    margin-bottom: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.job-meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px; 
+    font-size: 0.95em;
+}
+
+.job-meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job-meta-info i { 
+    font-size: 1.1em;
+    opacity: 0.85;
+}
+
+/* === Job Content Layout === */
+.job-content-wrapper {
+    display: flex;
+    flex-direction: row; 
+    padding: 30px;
+    gap: 35px; 
+}
+
+.job-main-content {
+    flex: 2.5; 
+    min-width: 0; 
+}
+
+.job-sidebar {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* === Job Sections === */
+.job-section {
+    margin-bottom: 30px;
+}
+
+.job-section h2 {
+    font-size: 1.75em;
+    color: #2c3e50; 
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eef2f7; 
+    font-weight: 600;
+}
+
+.job-section p,
+.job-description-content { 
+    color: #555e68; 
+    font-size: 1em; 
+    margin-bottom: 15px;
+    white-space: pre-wrap; 
+}
+
+
+
+
+/* === Company Info Box (Sidebar) === */
+.company-info-box {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.company-logo-sidebar {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px; /
+}
+
+.company-info-box h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.4em;
+    color: #343a40;
+    font-weight: 600;
+}
+.company-info-box .company-tagline {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.job-image-container {
+    text-align: center;
+}
+
+.job-illustration-sidebar {
+    width: 100%;
+    max-height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+/* === Buttons === */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out, transform 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.apply-now-btn-sidebar,
+.apply-now-btn-bottom {
+    background-color: #ff4fac;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+.apply-now-btn-bottom { 
+     margin-top: 15px;
+}
+
+
+.apply-now-btn-sidebar:hover,
+.apply-now-btn-bottom:hover {
+    background-color: #e63b90;
+}
+
+.visit-company-btn {
+    background-color: #4e9bff;
+    color: white;
+}
+
+.visit-company-btn:hover {
+    background-color: #2a7dd0;
+}
+/* ---Edit Profil--- */
+
+.Edit-Profil {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-edit-profil {
+    background-color: #ff69b4;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 20px;
+}
+.card-skil {
+    background-color: #ff69b4;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 20px;
+}
+
+.card-edit-profil input,
+.card-edit-profil textarea,
+.card-skil textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-edit-profil .form-check input{
+    width: max-content;
+}
+.card-skil input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-edit-profil button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-edit-profil input[type="file"] {
+    background-color: white;
+}
+
+.card-edit-profil label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-edit-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.profile-edit-name .left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-edit-name img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.change-photo-btn {
+    background-color: #f0f0f0;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 12px;
+}
+
+.btn-blue {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #2563eb;
+}
+
+.type-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.type-buttons label {
+    background-color: white;
+    color: #ff69b4;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.type-buttons input:checked + label {
+    background-color: #ff69b4;
+    color: white;
+    border-color: white;
+}
+
+.save-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #2563eb;
+}
+
+/* css punya perusahaan niehhh */
+/* ----Edit Profile----- */
+
+.profilperusahaan {
+    max-width: 900px;
+    margin: 50px auto;
+}
+.edit-profile-container {
+    background-color: #ff69b4;
+    border-radius: 25px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-container input.form-control {
+    border-radius: 10px;
+}
+.kolom label {
+    font-weight: 500;
+}
+
+select.form-select {
+    height: auto;
+}
+
+.btn-save {
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+}
+.btn-save-form-about {
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+}
+
+hr {
+    border: 2px solid;
+}
+
+/* ---profil perusahaan---- */
+.profile-card {
+    background-color: #ff66b2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+.profile-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.profile-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.box-about {
+    background-color: #ff66b2;
+    padding: 30px 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 40px auto;
+}
+
+.box-descripsi,
+.box-visi-misi {
+    background-color: rgba(153, 153, 153, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+    height: 300px;
+}
+.visi-misi-about {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box-visi-misi {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    height: 300px;
+}
+
+.box-visi-misi h3 {
+    text-align: left;
+}
+
+.edit-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.post-button {
+    background: white;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* job card */
+.job-card {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
+}
+
+.job-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.job-text {
+    line-height: 1.4;
+}
+
+.job-text small {
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+}
+
+.job-text strong {
+    font-size: 18px;
+    display: block;
+}
+
+.lihat-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+/* ---Profil-- */
+
+.Profil-pelamar {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-profil {
+    background: #ff69b4;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    background-color: #ff69b4;
+    padding: 10px 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto 20px;
+    margin-top: 20px;
+}
+
+.user-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.user-header .user-name {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-profil label {
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-profil p {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cv-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-input a {
+    background-color: white;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.work-type {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.work-type span {
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.media-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.media-social-icons a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ff69b4;
+    font-size: 18px;
+}
+
+.edit-button {
+    text-align: center;
+}
+
+.edit-button button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Bagian Navbar */
+
+.navbar {
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid black;
+}
+.container {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #5272fe;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #ff65c3;
+    font-weight: bold;
+    border-bottom: 2px solid #ff65c3;
+}
+
+.btn-masuk {
+    background-color: #ff65c3;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.btn-perusahaan {
+    background-color: #4169e1;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.navbar-toggler {
+    background-color: #5272fe;
+}
+
+/* bagian perusahaan detail */
+.profile-container {
+    background-color: #4e6cff;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-PD {
+    width: 60px;
+    height: 60px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.row-info {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.section-box {
+    background-color: #ff67c3;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section-box h5 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.social-icon {
+    background-color: #d9d9d9;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+/* Bagian footer */
+
+.footer {
+    background: linear-gradient(to bottom, white, #4169e1);
+    color: white;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    height: auto;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #f8f9fa;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #ff69b4;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #35b6fc;
+}
+
+
+/* Edit Profil Perusahaan */
+.editperusahaan{
+    max-width: 900px;
+    margin: 50px auto;
+}
+.kontak-card {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.info-left {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.info-left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.visit-button {
+    background: white;
+    color: #ff69b4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item span {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.map-right {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 20px;
+}
+
+.map-right iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.edit-btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.edit-btn {
+    background: #3b82f6;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+}
+/* Gaya untuk bagian kanan navbar */
+@media (min-width: 992px) {
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-right-section {
+        margin-left: auto;
+    }
+    
+}
+@media (max-width: 991.98px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-height: 150px;
+        max-width: 150px;
+        margin: 10px auto;
+    }
+
+    .tombol-pendaftaran {
+        flex-direction: column;
+    }
+
+    .video-description {
+        padding-left: 0;
+    }
+
+    .container-box {
+        flex-direction: column;
+    }
+    .btn-save {
+        position: static;
+        margin-top: 20px;
+    }
+    .btn-save-form-about {
+        position: absolute;
+        bottom: -50px;
+        right: 30px;
+    }
+    .description-box .row > div {
+        margin-top: 20px;
+    }
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lihat-btn {
+        align-self: flex-end;
+    }
+    .job-content-wrapper {
+        gap: 25px;
+    }
+    .job-header-banner h1 {
+        font-size: 2.2em;
+    }
+    .job-section h2 {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 575.98px) {
+    html {
+        font-size: 55%;
+    }
+
+    .logo {
+        max-height: 120px;
+        max-width: 120px;
+    }
+
+    .tombol-pendaftaran a {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-edit-name {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .type-buttons {
+        flex-direction: column;
+    }
+    .Profil-pelamar {
+        padding: 10px;
+    }
+    .row-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-container {
+        padding: 20px;
+    }
+    .JobDetailContainer {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .job-header-banner {
+        padding: 25px 20px;
+    }
+    .job-header-banner h1 {
+        font-size: 2em;
+    }
+    .job-header-banner .company-name-short {
+        font-size: 1.1em;
+    }
+    .job-meta-info {
+        font-size: 0.9em;
+        gap: 8px 15px;
+    }
+
+    .job-content-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .job-sidebar {
+        order: -1; /* Pindahkan sidebar ke atas di layar mobile (opsional) */
+    }
+
+    .job-section h2 {
+        font-size: 1.5em;
+    }
+}
+/* .profile-card {
+    flex-direction: column;
+}
+
+.map-right {
+    padding-left: 0;
+} */

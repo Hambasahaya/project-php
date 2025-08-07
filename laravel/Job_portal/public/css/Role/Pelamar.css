@@ -1,0 +1,734 @@
+/* Bagian Pencarian */
+.field {
+    background: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 20px 30px #ff69b4;
+}
+
+.logo {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.search-input,
+.input-lokasi {
+    display: flex;
+    align-items: center;
+    background-color: #d0d2d4;
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-input i {
+    color: #afb1b3;
+    margin-right: 8px;
+}
+
+.search-input input,
+.input-lokasi input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    height: 35px;
+    width: 100%;
+}
+
+.search-perusahaan {
+    display: flex;
+    align-items: center;
+    background-color: #d0d2d4;
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-perusahaan i {
+    color: #afb1b3;
+    margin-right: 8px;
+}
+
+.search-perusahaan input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    height: 35px;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Kategori */
+.container-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.popular-categories {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.category-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Daftar Perusahaan */
+.company-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carousel-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carousel-indicators.custom-indicators {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicators.custom-indicators button {
+    background-color: #888;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-indicators.custom-indicators .active {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-header h2 {
+    font-weight: bold;
+}
+
+.carousel-header p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background-color: #ff69b4;
+}
+
+/* CV dan Resume */
+.container-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cv-tutorial {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.cv-tutorial h2 {
+    margin-bottom: 30px;
+}
+
+.video-description {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+}
+
+.container-box {
+    background-color: #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Kategori Perusahaan */
+.Perusahaan-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.Perusahaan-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    height: 250px;
+    width: 100%;
+}
+
+/* Tentang Kami */
+.container-box-tentangkami {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.box-tentangkami {
+    background-color: rgba(255, 105, 180, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-desc,
+.box {
+    background-color: rgba(153, 153, 153, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+    height: 300px;
+    box-shadow: 0 20px 30px #838282;
+}
+
+.visi-misi {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    height: 300px;
+}
+
+.box h3 {
+    text-align: left;
+}
+
+/* ---Job Detail--- */
+
+.JobDetail {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.job-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff4fac, #ff8bb3);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.job-info {
+    flex: 2;
+}
+
+.company-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.job-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.job-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.job-info h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.job-info h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.job-info ul {
+    padding-left: 20px;
+}
+.job-info li {
+    margin-bottom: 8px;
+}
+
+.apply-btn,
+.visit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #4e9bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apply-btn:hover,
+.visit-btn:hover {
+    background: #2a7dd0;
+}
+
+/* ---Edit Profil---  */
+
+.Edit-Profil {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-edit-profil {
+    background-color: #ff69b4;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 20px;
+}
+.card-skil {
+    background-color: #ff69b4;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 20px;
+}
+
+.card-edit-profil input,
+.card-edit-profil textarea,
+.card-skil textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-skil input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-edit-profil button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #f2b5d4;
+    color: #333;
+}
+
+.card-edit-profil input[type="file"] {
+    background-color: white;
+}
+
+.card-edit-profil label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-edit-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.profile-edit-name .left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-edit-name img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.change-photo-btn {
+    background-color: #f0f0f0;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 12px;
+}
+
+.btn-blue {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #2563eb;
+}
+
+.type-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.type-buttons label {
+    background-color: white;
+    color: #ff69b4;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.type-buttons input:checked + label {
+    background-color: #ff69b4;
+    color: white;
+    border-color: white;
+}
+
+.save-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #2563eb;
+}
+.job-card {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
+}
+
+.job-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.job-text {
+    line-height: 1.4;
+}
+
+.job-text small {
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+}
+
+.job-text strong {
+    font-size: 18px;
+    display: block;
+}
+
+.lihat-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .profile-edit-name {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .type-buttons {
+        flex-direction: column;
+    }
+}
+
+/* ---Profil-- */
+
+.Profil-pelamar {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-profil {
+    background: #ff69b4;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    background-color: #ff69b4;
+    padding: 10px 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto 20px;
+    margin-top: 20px;
+}
+
+.user-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.user-header .user-name {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-profil label {
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-profil p {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cv-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-input a {
+    background-color: white;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.work-type {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.work-type span {
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.media-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.media-social-icons a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ff69b4;
+    font-size: 18px;
+}
+
+.edit-button {
+    text-align: center;
+}
+
+.edit-button a {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+    .Profil-pelamar {
+        padding: 10px;
+    }
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-height: 150px;
+        max-width: 150px;
+        margin: 10px auto;
+    }
+
+    .tombol-pendaftaran {
+        flex-direction: column;
+    }
+
+    .video-description {
+        padding-left: 0;
+    }
+
+    .container-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 55%;
+    }
+
+    .logo {
+        max-height: 120px;
+        max-width: 120px;
+    }
+
+    .tombol-pendaftaran a {
+        width: 100%;
+        text-align: center;
+    }
+}

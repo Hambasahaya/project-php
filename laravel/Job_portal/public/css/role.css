@@ -1,0 +1,118 @@
+/* role.css */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, white 50%, #ff65c3 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-role {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.title-role {
+    background-color: #4169e1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 100px;
+    margin-top: 200px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.content-role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.button-role {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.pelamar-role,
+.perusahaan-role {
+    background-color: white;
+
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.pelamar-role {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.perusahaan-role {
+    background-color: white;
+    color: #333;
+}
+
+.pelamar-role h2,
+.perusahaan-role h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.button-description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+/* Hover and active effects */
+.pelamar-role:hover,
+.perusahaan-role:hover {
+    transform: scale(1.05);
+}
+
+.pelamar-role:active {
+    background-color: #e656a6;
+}
+
+.perusahaan-role:active {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .button-role {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pelamar-role,
+    .perusahaan-role {
+        width: 90%;
+        height: auto;
+    }
+
+    .title-role {
+        font-size: 1em;
+    }
+}

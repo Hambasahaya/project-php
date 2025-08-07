@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   title: 'Password Changed Successfully!',
                   text: 'Your password has been changed successfully.'
                 });
-              } else { // Email tidak ditemukan atau ada kesalahan lain
+              } else { 
                 throw new Error('Failed to change password');
               }
             }
@@ -94,8 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
           });
         });
   });
-
-  // Add throttled event listener to each "Add to Cart" button
   addToCartButtons.forEach(button => {
       const throttledClick = throttle((event) => {
           let id_produk = button.getAttribute("data-id_produk");
@@ -175,8 +173,6 @@ document.addEventListener("DOMContentLoaded", function() {
       const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
       const headers = new Headers();
       headers.append('X-CSRF-TOKEN', csrfToken);
-
-      // Kirim permintaan POST menggunakan fetch API dengan header yang disetel
       fetch(url, {
           method: 'POST',
           headers: headers,
@@ -193,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => {
           console.error('Error sending qty and productId:', error);
-          // Tangani kesalahan jika diperlukan
       });
   }
 

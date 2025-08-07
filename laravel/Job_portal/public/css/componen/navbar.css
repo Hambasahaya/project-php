@@ -1,0 +1,50 @@
+.navbar {
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid black;
+}
+.container {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #5272fe;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #ff65c3;
+    font-weight: bold;
+    border-bottom: 2px solid #ff65c3;
+}
+
+.btn-masuk {
+    background-color: #ff65c3;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.btn-perusahaan {
+    background-color: #4169e1;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.navbar-toggler {
+    background-color: #5272fe;
+}
+
+/* Gaya untuk bagian kanan navbar */
+@media (min-width: 992px) {
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-right-section {
+        margin-left: auto;
+    }
+}

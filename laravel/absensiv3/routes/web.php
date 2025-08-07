@@ -1,0 +1,13 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/login', function () {
+    return view('Pages.AuthPages');
+})->name('login');
+Route::get('/forgetpassword', function () {
+    return view('Pages.AuthPages');
+})->name('forgetpass');

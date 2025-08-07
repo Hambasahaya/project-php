@@ -1,0 +1,354 @@
+/* Bagian Pencarian */
+.field {
+    background: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 20px 30px #ff69b4;
+}
+
+.logo {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.search-input,
+.search-perusahaan,
+.input-lokasi {
+    display: flex;
+    align-items: center;
+    background-color: #d0d2d4;
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-input i,
+.search-perusahaan i {
+    color: #afb1b3;
+    margin-right: 8px;
+}
+
+.search-input input,
+.search-perusahaan input,
+.input-lokasi input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    height: 35px;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Tombol Login Regis */
+.container-box-pendaftaran {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-pendaftaran {
+    background-color: #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tombol-pendaftaran {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tombol-pendaftaran a {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tombol-pendaftaran a:hover {
+    background-color: #303f9f;
+}
+
+.description p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Kategori */
+.container-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.popular-categories {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.category-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Daftar Perusahaan */
+.company-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carousel-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carousel-indicators.custom-indicators {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicators.custom-indicators button {
+    background-color: #888;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-indicators.custom-indicators .active {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-header h2 {
+    font-weight: bold;
+}
+
+.carousel-header p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background-color: #ff69b4;
+}
+
+/* CV dan Resume */
+.container-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cv-tutorial {
+    margin: 50px 0 20px;
+    text-align: center;
+}
+
+.cv-tutorial h2 {
+    margin-bottom: 30px;
+}
+
+.video-description {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+}
+
+.container-box {
+    background-color: #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Kategori Perusahaan */
+.Perusahaan-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.Perusahaan-buttons button {
+    padding: 30px;
+    background-color: #ff69b4;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    height: 250px;
+    width: 100%;
+}
+
+/* Tentang Kami */
+.container-box-tentangkami {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.box-tentangkami {
+    background-color: rgba(255, 105, 180, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-desc,
+.box {
+    background-color: rgba(153, 153, 153, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+    height: 300px;
+    box-shadow: 0 20px 30px #838282;
+}
+
+.visi-misi {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    height: 300px;
+}
+
+.box h3 {
+    text-align: left;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-height: 150px;
+        max-width: 150px;
+        margin: 10px auto;
+    }
+
+    .tombol-pendaftaran {
+        flex-direction: column;
+    }
+
+    .video-description {
+        padding-left: 0;
+    }
+
+    .container-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 55%;
+    }
+
+    .logo {
+        max-height: 120px;
+        max-width: 120px;
+    }
+
+    .tombol-pendaftaran a {
+        width: 100%;
+        text-align: center;
+    }
+}

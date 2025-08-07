@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+      # - "pupr.ai:80"
+    volumes:
+      - .:/var/www
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: slpu
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pqowie
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

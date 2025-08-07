@@ -1,0 +1,90 @@
+body{
+background-color: #818181 !important;
+}
+
+.header {
+background-image: url('/img/bg2.png');
+color: white;
+padding: 20px;
+text-align: center;
+height: 30vh;
+}
+.user-card {
+background: white;
+padding: 15px;
+border-radius: 10px;
+margin-top: -120px;
+}
+.btn-icon {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+width: 100%;
+}
+.btn-icon i {
+font-size: 24px;
+margin-bottom: 5px;
+}
+
+.btn-icon img{
+    width: 15%;
+}
+.absen-box {
+ font-size: 18px;
+font-weight: bold;
+color: white;
+padding: 15px;
+border-radius: 10px;
+text-align: center;
+}
+.bg-green {
+background-color: #28a745;
+}
+
+.bg-red {
+background-color: #dc3545;
+        }
+
+.status-box {
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 15px;
+text-align: center;
+}
+.data-table {
+background-color: #0d6efd;
+color: white;
+border-radius: 10px;
+padding: 10px;
+}
+.absen-box button {
+background-color: transparent;
+width: 30%;
+padding: 0;
+border: none;
+}
+.absen-box button i{
+    font-size: 4rem;
+padding: 0px;
+}
+.bg-login{
+    background-image: url('/img/bg1.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+@media (max-width: 576px) {
+  .icon-img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-icon {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+

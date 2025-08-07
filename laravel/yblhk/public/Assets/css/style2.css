@@ -1,0 +1,46 @@
+.laporanform{
+    background-color:white;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 15px 9px 5px 0px rgba(32,87,129,0.81);
+-webkit-box-shadow: 15px 9px 5px 0px rgba(32,87,129,0.81);
+-moz-box-shadow: 15px 9px 5px 0px rgba(32,87,129,0.81);
+}
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.chart-container > div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+    height: 300px; 
+}
+
+.data-tabel{
+    margin: 0px;
+    padding: 0px;
+    width: max-content;
+    table-layout: fixed;
+}
+.data-tabel td {
+    max-width: 300px;         /* batas kolom */
+    white-space: normal;      /* biar bisa wrap */
+    word-wrap: break-word;    /* potong kata panjang */
+    overflow-wrap: break-word;
+}
